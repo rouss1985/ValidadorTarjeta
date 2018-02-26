@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validator</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="small-12 medium-12 large-12 columns">
+      <div class="top-bar menu" id="responsive-menu">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text"><img class="logo" src="./assets/images/logo-banamex.png" alt="logo"></li>
+          <li><a href="#0">Tarjetas</a></li>
+          <li><a href="#0">Creditos</a></li>
+          <li><a href="#0">Inversiones</a></li>
+          <li><a href="#0">Cuentas</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Buscar</button></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="row" id="container">
+      <div class="title small-8 medium-8 large-8 columns">
+        <h2>Validación de tarjeta de crédito</h2>
+      </div>
+      <div class="small-6 medium-6 large-6 columns">
+          <form id="form" action="#">
+              <div id="error">
+
+              </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-8 medium-8 cell">
+                <label>Nombre del Cuentahabiente</label>
+                <input type="text" placeholder="Escribe tu nombre completo" data-validacion="nombre" id="nombre" />
+              </div>
+              <div class="large-8 medium-8 cell">
+                <label>Número de Tarjeta</label>
+                <input type="text" size="16" placeholder="Escribe los 16 digitos de tu tarjeta" data-validacion="tarjeta"/>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-4 medium-4 cell">
+                <label>Mes de expiración</label>
+                <input type="text" placeholder="Fecha" data-validacion="expirames"/>
+              </div>
+              <div class="large-4 medium-4 cell">
+                <label>Año de expiración</label>
+                <input type="text" placeholder="Fecha" data-validacion="expiraanio"/>
+              </div>
+              <div class="large-8 medium-8 cell">
+                <label>CVV</label>
+                <input type="text" placeholder="Código de seguridad" data-validacion="ccv"/>
+              </div>
+            </div>
+            <input type="submit" name="" value="Validar">
+          </form>
+
+      </div>
+      <div class="small-6 medium-6 large-6 columns">
+        <img class="tarjet" src="./assets/images/tarjetas-de-credito.png" alt="logo">
+      </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
